@@ -1,0 +1,71 @@
+{
+  "judul": "Diagnosis hama dan penyakit utama pada tanaman cabai",
+  "batas": "Aturan berasal dari 3 publikasi resmi (Balitsa Kementerian Pertanian RI, Direktorat Perlindungan Hortikultura, dan University of Florida IFAS Extension) serta hanya mencakup penyakit virus kuning, antraknosa (patek), layu bakteri, dan serangan tungau/thrips. Hasilnya saran awal, bukan keputusan akhir agronomi.",
+  "sumber": {
+    "S1": "Petunjuk Teknis Pengendalian Organisme Pengganggu Tumbuhan (OPT) Cabai, Balai Penelitian Tanaman Sayuran (Balitsa) Kementerian Pertanian RI, https://balitsa.litbang.pertanian.go.id/, diakses 12 Nov 2026",
+    "S2": "Pepper Diseases and Pests Management Guide, University of Florida IFAS Extension, https://edis.ifas.ufl.edu/publication/VH054, diakses 12 Nov 2026",
+    "S3": "Pedoman Pengenalan dan Pengendalian Virus Kuning dan Antraknosa pada Cabai, Direktorat Perlindungan Hortikultura Kementan RI, https://hortikultura.pertanian.go.id/, diakses 12 Nov 2026"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "jika": [
+        "daun muda mengeriting ke atas",
+        "terdapat serangga kecil putih di balik daun"
+      ],
+      "mode": "atau",
+      "maka": "infestasi kutu kebul (Bemisia tabaci)",
+      "sumber": "S1"
+    },
+    {
+      "id": "R2",
+      "jika": [
+        "infestasi kutu kebul (Bemisia tabaci)",
+        "helai daun berubah kuning cerah menyeluruh"
+      ],
+      "mode": "dan",
+      "maka": "penyakit virus kuning (Gemini Virus)",
+      "sumber": "S3"
+    },
+    {
+      "id": "R3",
+      "jika": [
+        "curah hujan tinggi dan udara lembap",
+        "drainase lahan buruk atau tergenang"
+      ],
+      "mode": "atau",
+      "maka": "kondisi lingkungan lembap ekstrem",
+      "sumber": "S2"
+    },
+    {
+      "id": "R4",
+      "jika": [
+        "kondisi lingkungan lembap ekstrem",
+        "bercak hitam cekung melingkar pada buah"
+      ],
+      "mode": "dan",
+      "maka": "penyakit patek (Antraknosa)",
+      "sumber": "S3"
+    },
+    {
+      "id": "R5",
+      "jika": [
+        "kondisi lingkungan lembap ekstrem",
+        "tanaman layu mendadak meski tanah basah"
+      ],
+      "mode": "dan",
+      "maka": "penyakit layu bakteri (Ralstonia solanacearum)",
+      "sumber": "S2"
+    },
+    {
+      "id": "R6",
+      "jika": [
+        "daun melengkung ke bawah seperti sendok",
+        "permukaan bawah daun berwarna keperakan"
+      ],
+      "mode": "dan",
+      "maka": "serangan hama tungau (Mites) dan Thrips",
+      "sumber": "S1"
+    }
+  ]
+}
